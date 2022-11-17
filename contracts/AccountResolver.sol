@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: MIT
 pragma solidity >=0.8.4;
 
-import "./interface/ResolverBase.sol";
-import "./interface/IAccountResolver.sol";
+import "./ResolverBase.sol";
+import "./IAccountResolver.sol";
 
 contract AccountResolver is IAccountResolver, ResolverBase {
     mapping(uint64 => mapping(bytes32 => string)) versionable_names;
